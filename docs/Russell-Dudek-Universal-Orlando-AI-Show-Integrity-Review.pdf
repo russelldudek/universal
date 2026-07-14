@@ -1,0 +1,302 @@
+%PDF-1.4
+%AAAA
+1 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+2 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+3 0 obj
+<< /Type /Catalog /Pages 4 0 R >>
+endobj
+4 0 obj
+<< /Type /Pages /Kids [5 0 R 7 0 R 9 0 R] /Count 3 >>
+endobj
+5 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 6 0 R >>
+endobj
+6 0 obj
+<< /Length 1128 >>
+stream
+q
+0.03 0.08 0.18 rg
+0 700 612 92 re f
+Q
+BT
+/F2 20 Tf
+1 1 1 rg
+42 748 Td
+(AI Show Integrity Review) Tj
+ET
+BT
+/F1 9 Tf
+0.2 0.78 0.95 rg
+42 726 Td
+(Production-readiness and operating-evidence worksheet) Tj
+ET
+BT
+/F2 12 Tf
+0.03 0.08 0.18 rg
+42 670 Td
+(Scene and Cue) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 650 Td
+(Service or workflow: what exact moment is changing?) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 631 Td
+(Operating owner: who owns the outcome after launch?) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 612 Td
+(Guest or business outcome, baseline and value hypothesis.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 593 Td
+(Workflow and adoption burden.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 574 Td
+(Consequence tier and prohibited behavior.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 555 Td
+(Data sources, lineage, quality, timeliness, access and privacy.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 536 Td
+(Model role and limits.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 517 Td
+(Human approval, override, escalation and stop rights.) Tj
+ET
+BT
+/F1 7 Tf
+0.35 0.4 0.48 rg
+42 30 Td
+(Russell Dudek | Universal Orlando AI Technology | 1/3) Tj
+ET
+endstream
+endobj
+7 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 8 0 R >>
+endobj
+8 0 obj
+<< /Length 1257 >>
+stream
+q
+0.03 0.08 0.18 rg
+0 700 612 92 re f
+Q
+BT
+/F2 20 Tf
+1 1 1 rg
+42 748 Td
+(AI Show Integrity Review) Tj
+ET
+BT
+/F1 9 Tf
+0.2 0.78 0.95 rg
+42 726 Td
+(Production-readiness and operating-evidence worksheet) Tj
+ET
+BT
+/F2 12 Tf
+0.03 0.08 0.18 rg
+42 670 Td
+(Run) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 650 Td
+(Architecture and integration dependencies.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 631 Td
+(SIT, E2E, regression, performance and security evidence.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 612 Td
+(Observability, drift, latency, service health and alert ownership.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 593 Td
+(Rollback, recovery and business continuity.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 574 Td
+(Vendor and API resilience, concentration risk and exit path.) Tj
+ET
+BT
+/F2 12 Tf
+0.03 0.08 0.18 rg
+42 550 Td
+(Review) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 530 Td
+(Adoption and retained use.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 511 Td
+(Outcome and economic evidence.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 492 Td
+(Trust, incidents and control coverage.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 473 Td
+(Learning, reuse and retirement decision.) Tj
+ET
+BT
+/F1 7 Tf
+0.35 0.4 0.48 rg
+42 30 Td
+(Russell Dudek | Universal Orlando AI Technology | 2/3) Tj
+ET
+endstream
+endobj
+9 0 obj
+<< /Type /Page /Parent 4 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 1 0 R /F2 2 0 R >> >> /Contents 10 0 R >>
+endobj
+10 0 obj
+<< /Length 1270 >>
+stream
+q
+0.03 0.08 0.18 rg
+0 700 612 92 re f
+Q
+BT
+/F2 20 Tf
+1 1 1 rg
+42 748 Td
+(AI Show Integrity Review) Tj
+ET
+BT
+/F1 9 Tf
+0.2 0.78 0.95 rg
+42 726 Td
+(Production-readiness and operating-evidence worksheet) Tj
+ET
+BT
+/F2 12 Tf
+0.03 0.08 0.18 rg
+42 670 Td
+(Production Disposition) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 650 Td
+(RELEASE: evidence supports normal production use.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 631 Td
+(LIMIT: restrict scope, users, data, automation or operating window.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 612 Td
+(HOLD: required evidence or controls are incomplete.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 593 Td
+(ROLL BACK: restore the prior operating state.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 574 Td
+(RETIRE: value no longer justifies cost or consequence.) Tj
+ET
+BT
+/F2 12 Tf
+0.03 0.08 0.18 rg
+42 550 Td
+(Sign-Off) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 530 Td
+(Business owner, technical owner, control authorities and release authority must be) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 517 Td
+(  explicit.) Tj
+ET
+BT
+/F1 9 Tf
+0.08 0.11 0.18 rg
+50 498 Td
+(Use before release, after a material change and after a meaningful operating event.) Tj
+ET
+BT
+/F1 7 Tf
+0.35 0.4 0.48 rg
+42 30 Td
+(Russell Dudek | Universal Orlando AI Technology | 3/3) Tj
+ET
+endstream
+endobj
+xref
+0 11
+0000000000 65535 f 
+0000000015 00000 n 
+0000000085 00000 n 
+0000000160 00000 n 
+0000000209 00000 n 
+0000000278 00000 n 
+0000000414 00000 n 
+0000001593 00000 n 
+0000001729 00000 n 
+0000003037 00000 n 
+0000003174 00000 n 
+trailer
+<< /Size 11 /Root 3 0 R /Info << /Title (AI Show Integrity Review) /Author (Russell Dudek) >> >>
+startxref
+4496
+%%EOF
