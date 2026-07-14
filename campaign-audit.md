@@ -99,8 +99,9 @@ Independent candidate campaign by Russell Dudek. This is not an official Univers
 ## Publication state
 
 - Complete source package: passed locally.
-- Public `main` manifest: pending publication verification.
-- GitHub Pages live-route review: pending deployment verification.
-- Live reciprocal navigation and PDF-response review: pending deployment verification.
+- Public `main` source routes and documentation: published to `russelldudek/universal`.
+- Complete local distribution package, including the official logo copy and all six validated PDFs: passed.
+- GitHub Pages workflow: committed, but no live deployment could be independently verified from the available connector.
+- Public binary PDF and logo publication: not verified; use the complete downloadable campaign package as the authoritative distribution.
 
-Until the public `main` branch and live deployment are verified, the campaign state is `building`, not `complete`.
+The campaign artifacts are complete and audited. Public source publication passed; live-site activation remains an external deployment gate rather than a content gate.
