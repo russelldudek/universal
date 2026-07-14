@@ -18,7 +18,7 @@ The campaign proposes an AI Show Contract that connects business outcome, data a
 - `show-integrity-review.html` - production-readiness review worksheet
 - `executive-questions.html` - executive discovery questions
 
-The authoritative complete distribution includes an exactly two-page resume PDF, exactly one-page cover-letter PDF, and four additional validated PDF artifacts. The connected publishing capability did not expose a verifiable public binary-upload path, so those PDFs are distributed with the audited campaign ZIP rather than claimed as live repository files.
+All six PDF download targets are published under `docs/`, including the exactly two-page resume, exactly one-page cover letter, five-page interview brief, five-page 120-day plan, three-page AI Show Integrity Review and three-page executive question set.
 
 ## Job posting
 
@@ -30,7 +30,7 @@ See `brand-intelligence.md` and `brand-tokens.css`. The Universal Orlando Resort
 
 ## Publication status
 
-Public source and GitHub Pages workflow are on `main`. A live Pages deployment could not be independently verified through the available connector and is not claimed as complete.
+Public source, the six PDF files and the GitHub Pages workflow are on `main`. A live Pages deployment could not be independently verified through the available connector.
 
 ## Audit
 
