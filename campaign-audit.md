@@ -93,15 +93,14 @@ Independent candidate campaign by Russell Dudek. This is not an official Univers
 
 - All relative HTML, CSS, JavaScript, image and PDF paths resolve in the local package.
 - Resume and cover-letter reciprocal links are present.
-- All six PDF download targets exist and open.
-- Required logo asset is local rather than hotlinked.
+- All six PDF download targets exist in public `main` and return valid `%PDF-1.4` content.
+- Required logo asset is local rather than hotlinked in the complete distribution; the public route retains its documented fallback.
 
 ## Publication state
 
 - Complete source package: passed locally.
 - Public `main` source routes and documentation: published to `russelldudek/universal`.
-- Complete local distribution package, including the official logo copy and all six validated PDFs: passed.
+- All six public PDF download targets: published and structurally verified in the repository.
 - GitHub Pages workflow: committed, but no live deployment could be independently verified from the available connector.
-- Public binary PDF and logo publication: not verified; use the complete downloadable campaign package as the authoritative distribution.
 
-The campaign artifacts are complete and audited. Public source publication passed; live-site activation remains an external deployment gate rather than a content gate.
+The campaign artifacts are complete and audited. Public source and document publication passed; live-site deployment remains an external verification gate.
