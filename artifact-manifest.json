@@ -1,0 +1,43 @@
+{
+  "campaign": "Universal Orlando Resort - Director, Artificial Intelligence Technology",
+  "job_posting": "https://careers.pageuppeople.com/851/cw/en-us/job/665087/director-artificial-intelligence-technology",
+  "routes": [
+    "index.html",
+    "resume.html",
+    "cover-letter.html",
+    "interview-brief.html",
+    "120-day-plan.html",
+    "show-integrity-review.html",
+    "executive-questions.html"
+  ],
+  "source": [
+    "styles.css",
+    "brand-tokens.css",
+    "app.js",
+    "brand-intelligence.md",
+    "source-notes.md",
+    "README.md",
+    ".nojekyll",
+    ".github/workflows/pages.yml",
+    "campaign-audit.md"
+  ],
+  "brand_assets": [
+    "assets/brand/universal-orlando-logo.png"
+  ],
+  "pdfs": [
+    "docs/Russell-Dudek-Universal-Orlando-AI-Technology-Director-Resume.pdf",
+    "docs/Russell-Dudek-Universal-Orlando-AI-Technology-Director-Cover-Letter.pdf",
+    "docs/Russell-Dudek-Universal-Orlando-AI-Interview-Brief.pdf",
+    "docs/Russell-Dudek-Universal-Orlando-AI-120-Day-Plan.pdf",
+    "docs/Russell-Dudek-Universal-Orlando-AI-Show-Integrity-Review.pdf",
+    "docs/Russell-Dudek-Universal-Orlando-Executive-Interview-Questions.pdf"
+  ],
+  "page_contracts": {
+    "Russell-Dudek-Universal-Orlando-AI-Technology-Director-Resume.pdf": 2,
+    "Russell-Dudek-Universal-Orlando-AI-Technology-Director-Cover-Letter.pdf": 1,
+    "Russell-Dudek-Universal-Orlando-AI-Interview-Brief.pdf": 5,
+    "Russell-Dudek-Universal-Orlando-AI-120-Day-Plan.pdf": 5,
+    "Russell-Dudek-Universal-Orlando-AI-Show-Integrity-Review.pdf": 3,
+    "Russell-Dudek-Universal-Orlando-Executive-Interview-Questions.pdf": 3
+  }
+}
