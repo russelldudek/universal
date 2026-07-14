@@ -1,0 +1,6 @@
+@import url(".source-parts/styles.css.part-00");
+@import url(".source-parts/styles.css.part-01");
+@import url(".source-parts/styles.css.part-02");
+@import url(".source-parts/styles.css.part-03");
+/* Repair the single declaration split between staged source parts. */
+.artifact-links a{background:#fff;color:#101827;text-decoration:none;padding:1rem;border-left:3px solid var(--campaign-cyan);font-weight:700;font-size:.84rem}
