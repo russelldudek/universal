@@ -1,0 +1,125 @@
+name: Materialize and validate candidate campaign
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '.source-parts/**'
+      - '.github/workflows/materialize.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Reconstruct source files
+        shell: bash
+        run: |
+          set -euo pipefail
+          cat .source-parts/styles.css.part-* > styles.css
+          cat .source-parts/index.html.part-* > index.html
+          cat .source-parts/resume.html.part-* > resume.html
+          cat .source-parts/interview-brief.html.part-* > interview-brief.html
+          cat .source-parts/120-day-plan.html.part-* > 120-day-plan.html
+          cat .source-parts/show-integrity-review.html.part-* > show-integrity-review.html
+          touch .nojekyll
+
+      - name: Fetch documented identity asset
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p assets/brand
+          curl --fail --location --retry 4 \
+            'https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Universal_Orlando_Resort_logo_2023.png/250px-Universal_Orlando_Resort_logo_2023.png' \
+            --output assets/brand/universal-orlando-logo.png
+          echo '77b39264240fdbb595997de11defd5c45d2ad6bb42e05c79715396c787c777fe  assets/brand/universal-orlando-logo.png' | sha256sum --check --strict
+
+      - name: Install PDF toolchain
+        shell: bash
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y fonts-cabin fonts-arimo poppler-utils
+          python -m pip install --upgrade pip
+          python -m pip install 'weasyprint==68.0'
+
+      - name: Generate printable artifacts
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p docs
+          weasyprint resume.html docs/Russell-Dudek-Universal-Orlando-AI-Technology-Director-Resume.pdf
+          weasyprint cover-letter.html docs/Russell-Dudek-Universal-Orlando-AI-Technology-Director-Cover-Letter.pdf
+          weasyprint interview-brief.html docs/Russell-Dudek-Universal-Orlando-AI-Interview-Brief.pdf
+          weasyprint 120-day-plan.html docs/Russell-Dudek-Universal-Orlando-AI-120-Day-Plan.pdf
+          weasyprint show-integrity-review.html docs/Russell-Dudek-Universal-Orlando-AI-Show-Integrity-Review.pdf
+          weasyprint executive-questions.html docs/Russell-Dudek-Universal-Orlando-Executive-Interview-Questions.pdf
+
+      - name: Enforce PDF page contracts and confidentiality
+        shell: bash
+        run: |
+          set -euo pipefail
+          check_pages() {
+            local file="$1" expected="$2" actual
+            actual=$(pdfinfo "$file" | awk '/^Pages:/ {print $2}')
+            test "$actual" = "$expected" || { echo "$file: expected $expected pages, got $actual"; exit 1; }
+          }
+          check_pages docs/Russell-Dudek-Universal-Orlando-AI-Technology-Director-Resume.pdf 2
+          check_pages docs/Russell-Dudek-Universal-Orlando-AI-Technology-Director-Cover-Letter.pdf 1
+          check_pages docs/Russell-Dudek-Universal-Orlando-AI-Interview-Brief.pdf 5
+          check_pages docs/Russell-Dudek-Universal-Orlando-AI-120-Day-Plan.pdf 5
+          check_pages docs/Russell-Dudek-Universal-Orlando-AI-Show-Integrity-Review.pdf 3
+          check_pages docs/Russell-Dudek-Universal-Orlando-Executive-Interview-Questions.pdf 3
+          ! grep -RIniE --exclude-dir=.git --exclude='*.pdf' '(role[[:space:]_-]*forge)' .
+          mkdir -p /tmp/pdf-text
+          for file in docs/*.pdf; do pdftotext "$file" "/tmp/pdf-text/$(basename "$file").txt"; done
+          ! grep -RIniE '(role[[:space:]_-]*forge)' /tmp/pdf-text
+
+      - name: Install final Pages workflow
+        shell: bash
+        run: |
+          cat > .github/workflows/pages.yml <<'YAML'
+          name: Publish candidate site
+          on:
+            push:
+              branches: [main]
+            workflow_dispatch:
+          permissions:
+            contents: read
+            pages: write
+            id-token: write
+          concurrency:
+            group: pages
+            cancel-in-progress: true
+          jobs:
+            deploy:
+              environment:
+                name: github-pages
+                url: ${{ steps.deployment.outputs.page_url }}
+              runs-on: ubuntu-latest
+              steps:
+                - uses: actions/checkout@v4
+                - uses: actions/configure-pages@v5
+                - uses: actions/upload-pages-artifact@v3
+                  with:
+                    path: .
+                - name: Deploy to GitHub Pages
+                  id: deployment
+                  uses: actions/deploy-pages@v4
+          YAML
+
+      - name: Commit complete package
+        shell: bash
+        run: |
+          set -euo pipefail
+          rm -rf .source-parts .bundle
+          rm -f .github/workflows/materialize.yml
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A
+          git commit -m 'Publish complete Universal Orlando AI director campaign'
+          git push
