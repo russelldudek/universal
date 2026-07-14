@@ -1,0 +1,17 @@
+:root {
+  --brand-night: #050814; /* source-sampled / official digital character */
+  --brand-midnight: #0c1733; /* source-sampled from logo */
+  --brand-deep-blue: #203160; /* source-sampled from logo */
+  --brand-blue: #3158a0; /* source-sampled from logo */
+  --brand-silver: #d7dfea; /* source-sampled from logo */
+  --brand-gold: #a97b16; /* source-sampled from logo */
+  --brand-white: #ffffff;
+  --campaign-cyan: #56d7ff; /* candidate-original: operating signal */
+  --campaign-amber: #ffc857; /* candidate-original: review state */
+  --campaign-coral: #ff745c; /* candidate-original: hold / recovery */
+  --ink: #111827;
+  --muted: #526071;
+  --paper: #ffffff;
+  --paper-soft: #f4f6fa;
+  --line: #d8dee8;
+}
