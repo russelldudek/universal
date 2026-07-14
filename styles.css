@@ -3,3 +3,4 @@
 @import url("site-part-02.css");
 /* Public source fallback for the documented Universal Orlando Resort identity asset. */
 img[src$="universal-orlando-logo.png"]{content:url("https://upload.wikimedia.org/wikipedia/en/thumb/d/d0/Universal_Orlando_Resort_logo_2023.png/250px-Universal_Orlando_Resort_logo_2023.png")}
+@media(max-width:650px){.report-section p,.report-section li,.source-list{overflow-wrap:anywhere;word-break:break-word}}
