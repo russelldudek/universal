@@ -11,14 +11,14 @@ The campaign proposes an AI Show Contract that connects business outcome, data a
 ## Routes
 
 - `index.html` - candidate vision
-- `resume.html` - exactly two-page role-aligned resume
-- `cover-letter.html` - exactly one-page cover letter
+- `resume.html` - role-aligned resume source
+- `cover-letter.html` - cover-letter source
 - `interview-brief.html` - interview thesis brief
 - `120-day-plan.html` - director-level entry plan
 - `show-integrity-review.html` - production-readiness review worksheet
 - `executive-questions.html` - executive discovery questions
 
-Every print-oriented route includes a real PDF download under `docs/`.
+The authoritative complete distribution includes an exactly two-page resume PDF, exactly one-page cover-letter PDF, and four additional validated PDF artifacts. The connected publishing capability did not expose a verifiable public binary-upload path, so those PDFs are distributed with the audited campaign ZIP rather than claimed as live repository files.
 
 ## Job posting
 
@@ -26,7 +26,11 @@ https://careers.pageuppeople.com/851/cw/en-us/job/665087/director-artificial-int
 
 ## Brand assets
 
-See `brand-intelligence.md` and `brand-tokens.css`. The Universal Orlando Resort logo is used solely for nominative identification in an independent candidate context.
+See `brand-intelligence.md` and `brand-tokens.css`. The Universal Orlando Resort logo is used solely for nominative identification in an independent candidate context. The complete distribution includes the verified local PNG; the public source route includes a documented public-image fallback.
+
+## Publication status
+
+Public source and GitHub Pages workflow are on `main`. A live Pages deployment could not be independently verified through the available connector and is not claimed as complete.
 
 ## Audit
 
