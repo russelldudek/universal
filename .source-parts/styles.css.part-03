@@ -1,0 +1,14 @@
+ecision-rail div:nth-child(3){background:#ffe0da}.decision-rail div:last-child{background:#e8eaf0}.worksheet-line{border-bottom:1px solid #9aa8bc;height:.22in;margin-top:.05in}
+@media(max-width:1000px){.hero{grid-template-columns:1fr}.show-stage{max-width:760px}.moment-grid,.objection,.artifact-cta,.decision-band{grid-template-columns:1fr}.books,.scorecard,.plan-strip{grid-template-columns:repeat(2,1fr)}.evidence-row{grid-template-columns:130px 1fr}.evidence-row p{grid-column:2}.sheet,.report-page{width:min(8.5in,calc(100vw - 1rem));min-height:auto}.sheet-inner,.report-inner{padding:clamp(1rem,5vw,.5in)}.page-footer{position:static;margin-top:.25in}}
+@media(max-width:650px){.nav-links{display:none}.hero{padding-top:2rem}.company-lockup{align-items:flex-start;flex-direction:column}.company-lockup-text{border-left:0;padding-left:0}.hero h1{font-size:3.15rem}.show-stage{min-height:auto}.stage-window{height:auto;grid-template-columns:1fr 1fr;align-items:stretch}.scene-flat{min-height:190px}.scenario-readout{grid-template-columns:1fr}.tension-row{grid-template-columns:1fr}.tension-row span:nth-child(2){display:none}.tension-row strong:last-child{text-align:left;color:#afc1dc}.books,.scorecard,.plan-strip,.questions,.artifact-links{grid-template-columns:1fr}.evidence-row{grid-template-columns:1fr}.evidence-row p{grid-column:auto}.document-shell{padding:.5rem}.document-nav{align-items:flex-start;flex-direction:column}.doc-header{grid-template-columns:1fr}.doc-logo{width:1.35in;margin:0}.resume-columns,.report-grid-2,.report-grid-3,.review-grid{grid-template-columns:1fr}.sheet-inner{padding:.28in}.page-footer{left:.28in;right:.28in}.contact-line{display:block}.contact-line a,.contact-line span{display:block;margin-bottom:.02in}}
+@media print{
+ @page{size:Letter;margin:0}
+ html,body{background:#fff!important;color:#000!important}
+ .document-nav,.no-print,.site-nav{display:none!important}
+ .document-shell{padding:0}
+ .sheet,.report-page{width:8.5in;height:11in;min-height:11in;margin:0;box-shadow:none;overflow:hidden}
+ .resume-page,.cover-page{page-break-after:always}.resume-page:last-child,.cover-page:last-child{page-break-after:auto}
+ .page-footer{position:absolute}
+ a{text-decoration:none!important}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.stage-window:before,.scene-flat:after{animation:none!important}.scene-flat,.btn{transition:none!important}.btn:hover{transform:none}}
